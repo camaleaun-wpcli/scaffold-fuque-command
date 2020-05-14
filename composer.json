@@ -1,0 +1,31 @@
+{
+    "name": "camaleaun/scaffold-fuque-command",
+    "description": "Generates starter code for a theme based on fuque.",
+    "type": "wp-cli-package",
+    "homepage": "https://github.com/camaleaun/scaffold-fuque-command",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilberto Tavares",
+            "email": "camaleaun@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        },
+        "files": [
+            "scaffold-fuque-command.php"
+        ]
+    },
+    "require": {
+        "wp-cli/wp-cli": "*"
+    },
+    "extra": {
+        "commands": [
+            "scaffold fuque"
+        ]
+    }
+}
